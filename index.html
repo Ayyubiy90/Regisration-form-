@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>AL-IBADAH Form</title>
+    <link rel="stylesheet" href="sytles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p id="form">Please fill out this form</p>
+    <form method="post" action='https://www.instagram.com'>
+        <fieldset>
+        <label>Enter Your First Name: <input id="first-name" type="text" placeholder="first-name" required></label>
+        <label>Enter Your Last Name: <input id="last-name" type="text" placeholder="last-name" required></label>
+        <label>Enter Your Email: <input id="email" type="email" placeholder="email" aria-placeholder="email" required></label>
+        <label>Create a New Password: <input id="new-password" type="new-password" pattern="[a-z0-5{8,}]" placeholder="password" required></label>
+        <label>Your phone number: <input id="number" type="number" min="11" max="11" placeholder="number" ></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input type="radio" name="account-type" class="inline" /> Personal Account </label>
+        <label for="business-account"><input type="radio" name="account-type" class="inline" /> Business Account </label>
+        <label for="terms-and-conditions"><input type="checkbox" required  class="inline" /> I accept <a href="#"> the terms and conditions </a></label>
+      </fieldset>
+      <fieldset>
+        <label>Upload a profile picture: <input type="file" /></label>
+        <label>Input your age (years) : <input type="number" min="18" max="40" /></label>
+        
+        <label for="referrer">How do you hear about us?
+        <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">instagram</option>
+            <option value="2">facebook</option>
+            <option value="3">twitter</option>
+            <option value="4">news</option>
+        </select>
+        </label>
+        <label for="bio">Provide a bio:
+            <textarea id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
